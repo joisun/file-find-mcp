@@ -33,7 +33,7 @@ To build the project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/file-find-mcp.git
+git clone https://github.com/joisun/file-find-mcp
 cd file-find-mcp
 
 # Build in release mode
