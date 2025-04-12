@@ -1,0 +1,29 @@
+[package]
+name = "file-find-mcp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rmcp = { git = "https://github.com/modelcontextprotocol/rust-sdk", branch = "main", features = [
+  "server",
+  "transport-io",
+] }
+grep = "0.2.12"
+grep-regex = "0.1.12"
+grep-searcher = "0.1.11"
+ignore = "0.4.20"
+tokio = { version = "1", features = [
+  "macros",
+  "rt",
+  "rt-multi-thread",
+  "io-std",
+  "signal",
+] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = [
+  "env-filter",
+  "std",
+  "fmt",
+] }
+serde = "1.0.219"
+serde_json = "1.0"
